@@ -63,7 +63,7 @@ class MainActivity : AppCompatActivity() {
             result("Crosses win!!")
         }
 
-        if(fullBoard()) {
+        if(fullBoard() && !checkForVictory(CROSS) && !checkForVictory(NOUGHT)) {
             result("draw")
         }
     }
